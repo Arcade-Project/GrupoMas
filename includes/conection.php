@@ -3,7 +3,8 @@
 $server   = "localhost";
 $username = "root";
 $password = "Entrar";
-$db = mysqli_connect($server, $username, $password);
+$database = "grupo_mas";
+$db = mysqli_connect($server, $username, $password, $database);
 
 mysqli_query($db, "SET NAMES 'uft8'");
 
